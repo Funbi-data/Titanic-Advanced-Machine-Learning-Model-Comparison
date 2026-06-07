@@ -1,91 +1,73 @@
-**Titanic Survival Prediction: Advanced Machine Learning Models
-Project Overview**
+# Advanced Machine Learning Model Comparison on Titanic Survival Prediction
 
-This project was completed as part of the AnalystLab Africa Machine Learning Internship Program (Week 5 – Advanced Machine Learning).
+## Problem Statement
 
-The objective was to predict passenger survival on the Titanic using multiple machine learning algorithms and compare their performance to identify the best-performing model.
-**
-**Dataset**
+The objective of this project was to predict whether a passenger survived the Titanic disaster using machine learning classification algorithms. The project aimed to compare multiple advanced machine learning models and identify the best-performing model based on evaluation metrics.
 
-Dataset: Titanic Survival Dataset
-**Features Used**
-Pclass (Passenger Class)
-Sex
-Age
-Fare
-Target Variable
-Survived (0 = No, 1 = Yes)
-**Project Workflow**
-1. Data Preparation
-Loaded Titanic dataset
-Handled missing values
-Encoded categorical variables
-Selected relevant features
-Split dataset into training and testing sets
-2. Model Development
+## Dataset Used
 
-The following models were trained and evaluated:
+The Titanic Survival Dataset was used for this project. The dataset contains passenger information such as:
 
-Logistic Regression
+* Passenger Class (Pclass)
+* Sex
+* Age
+* Fare
+* Survival Status (Target Variable)
 
-Decision Tree Classifier
+The dataset was cleaned by handling missing values and encoding categorical variables before model training.
 
-Random Forest Classifier
+## Algorithms Used
 
-Gradient Boosting Classifier
+The following machine learning algorithms were implemented:
 
-Hyperparameter Tuning
+1. Logistic Regression
+2. Decision Tree Classifier
+3. Random Forest Classifier
+4. Gradient Boosting Classifier
 
-Best Parameters
-{
-    'max_depth': 10,
-    'n_estimators': 200
-}
-Best Cross Validation Score
-83.29%
-Model Performance
-Model	Accuracy
-Logistic Regression	79.89%
-Decision Tree	74.86%
-Random Forest	80.45%
-Gradient Boosting	81.01%
-Tuned Random Forest (CV Score)	83.29%
-**Key Findings**
-Decision Tree produced the lowest accuracy and showed signs of overfitting.
-Random Forest improved performance by combining multiple decision trees.
-Gradient Boosting achieved the highest test accuracy.
-Hyperparameter tuning improved the Random Forest model further.
-Challenges Encountered
-Handling missing values in the Age column.
-Converting categorical variables into numerical values.
-Understanding model evaluation metrics.
-Selecting optimal hyperparameters.
-**Technologies Used**
-Python
-Pandas
-NumPy
-Scikit-learn
-Matplotlib
-Seaborn
-Google Colab
-Evaluation Metrics
+Additionally, GridSearchCV was used to perform hyperparameter tuning on the Random Forest model.
 
-**The models were evaluated using:**
+## Model Performance
 
-Accuracy
-Precision
-Recall
-F1-Score
-Confusion Matrix
-Cross Validation Score
-Conclusion
+### Logistic Regression
 
-This project demonstrated how advanced machine learning algorithms can improve classification performance. Among the models tested, Gradient Boosting achieved the highest test accuracy, while the tuned Random Forest model achieved the strongest cross-validation score. The results highlight the importance of model comparison and hyperparameter tuning when building predictive machine learning systems.
+* Accuracy: 79.89%
 
-Author
+### Decision Tree
 
-Funbi Opemipo Olowojesiku
+* Accuracy: 74.86%
 
-GitHub: Funbi-data GitHub Profile
+### Random Forest
 
-LinkedIn: https://www.linkedin.com/in/funbiolowojesiku
+* Accuracy: 80.45%
+
+### Gradient Boosting
+
+* Accuracy: 81.01%
+
+### Tuned Random Forest
+
+* Best Parameters:
+
+  * max_depth = 10
+  * n_estimators = 200
+* Cross Validation Score: 83.29%
+
+## Challenges Faced
+
+* Handling missing values in the Age column.
+* Converting categorical variables such as Sex into numerical values.
+* Understanding the differences between multiple classification algorithms.
+* Selecting appropriate hyperparameters for model optimization.
+
+## Key Findings
+
+* Decision Tree produced the lowest accuracy and was more prone to overfitting.
+* Random Forest improved prediction performance by combining multiple decision trees.
+* Gradient Boosting achieved the highest testing accuracy of 81.01%.
+* Hyperparameter tuning further improved Random Forest performance.
+* Ensemble learning methods generally performed better than a single Decision Tree model.
+
+## Conclusion
+
+The project demonstrated the effectiveness of advanced machine learning techniques for classification tasks. Gradient Boosting emerged as the best-performing model on the test dataset, while the tuned Random Forest achieved the strongest cross-validation performance. This highlights the importance of model selection and hyperparameter optimization in building accurate predictive systems.
