@@ -1,22 +1,21 @@
-Titanic Survival Prediction: Advanced Machine Learning Models
-Project Overview
+**Titanic Survival Prediction: Advanced Machine Learning Models
+Project Overview**
 
 This project was completed as part of the AnalystLab Africa Machine Learning Internship Program (Week 5 – Advanced Machine Learning).
 
 The objective was to predict passenger survival on the Titanic using multiple machine learning algorithms and compare their performance to identify the best-performing model.
-
-Dataset
+**
+**Dataset**
 
 Dataset: Titanic Survival Dataset
-
-Features Used
+**Features Used**
 Pclass (Passenger Class)
 Sex
 Age
 Fare
 Target Variable
 Survived (0 = No, 1 = Yes)
-Project Workflow
+**Project Workflow**
 1. Data Preparation
 Loaded Titanic dataset
 Handled missing values
@@ -51,7 +50,7 @@ Decision Tree	74.86%
 Random Forest	80.45%
 Gradient Boosting	81.01%
 Tuned Random Forest (CV Score)	83.29%
-Key Findings
+**Key Findings**
 Decision Tree produced the lowest accuracy and showed signs of overfitting.
 Random Forest improved performance by combining multiple decision trees.
 Gradient Boosting achieved the highest test accuracy.
@@ -61,7 +60,7 @@ Handling missing values in the Age column.
 Converting categorical variables into numerical values.
 Understanding model evaluation metrics.
 Selecting optimal hyperparameters.
-Technologies Used
+**Technologies Used**
 Python
 Pandas
 NumPy
@@ -71,7 +70,7 @@ Seaborn
 Google Colab
 Evaluation Metrics
 
-The models were evaluated using:
+**The models were evaluated using:**
 
 Accuracy
 Precision
@@ -89,4 +88,4 @@ Funbi Opemipo Olowojesiku
 
 GitHub: Funbi-data GitHub Profile
 
-LinkedIn: Add your LinkedIn profile URL here.
+LinkedIn: https://www.linkedin.com/in/funbiolowojesiku
